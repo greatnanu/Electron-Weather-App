@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Openweathermap API Weather App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .btas {
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            background: #5f0096;
+            color: white;
+            font-stretch: expanded;
+            font-variant-caps: titling-caps;
+            font-family: sans-serif;
+        }
+
+        .f {
+            border-radius: 50px;
+            width: 70%;
+        }
+
+        .con {
+            margin-left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner text-center">
+        <h2 class="text-center">Weather Application</h2>
+        <p class="lead text-center">To find your temperature, click the button below.</p>
+        <button class="btas " id="showTemp" onclick="findWeather()">Find Weather</button>
+    </div>
+
+
+    <div id="outputTemp" hidden="true" class="con ">
+        <form>
+            <div class="form-group">
+                <label>Temperature (Degrees in celsius):</label>
+                <br>
+                <input type="text" class="form-control f" id="Temperature" style='color:"#BGGF00"'>
+            </div>
+            <div class="form-group">
+                <label> Temperature in Fahreinheight:</label>
+                <input type="text" class="form-control f" id="fahreinheight">
+            </div>
+            <div class="form-group">
+                <label> Wind Speed:</label>
+                <input type="text" class="form-control f" id="Windspeed">
+            </div>
+            <div class="form-group">
+                <label> Maximum Temperature:</label>
+                <input type="text" class="form-control f" id="temp_max">
+            </div>
+            <div class="form-group">
+                <label>Minimum Temperature:</label>
+                <input type="text" class="form-control f" id="temp_min">
+            </div>
+            <div class="form-group">
+                <label>Description:</label>
+                <input type="text" class="form-control f" id="description">
+            </div>
+            <div class="form-group">
+                <label>Humidity:</label>
+                <input type="text" class="form-control f" id="humidity">
+            </div>
+            <div class="form-group">
+                <label>Area Name:</label>
+                <input type="text" class="form-control f" id="name">
+            </div>
+            <div class="form-group">
+                <blabel>Pressure:</blabel>
+                <input type="text" class="form-control f" id="Pressure">
+            </div>
+            <div class="form-group">
+                <label>IP:</label>
+                <input type="text" class="form-control f" id="ip">
+            </div>
+        </form>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
